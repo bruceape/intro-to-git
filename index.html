@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Git: Happy times with version control</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Bruce Sullivan">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Git</h1>
+					<h3>Happy times with Version Control</h3>
+					<p><small>Presented by <a href="http://bruceape.com">Bruce Sullivan</a> | Academy of Art July 2013</small></p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Who I am.</h2>
+					</section>
+					<section>
+						<p>I am <a href="http://bruceape.com">Bruce Sullivan</a>. I am&hellip;</p>
+					</section>
+					<section>
+						Front End Developer
+					</section>
+					<section>
+						Designer
+					</section>
+					<section data-background="images/gingham_red.png">
+						Beard/Coffee/Type/Beer/Lumberjacking Enthusiast
+					</section>
+					<section>
+						<img src="images/ron.jpg" alt="">
+					</section>
+					<section>
+						<h3><a href="http://moovweb.com/">Moovweb</a></h3>
+						<img src="images/moovweb.png" alt="">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Let's talk workflow&hellip;</h2>
+					</section>
+					<section>
+						<h3>Starting out...</h3>
+						<img src="images/epic1.png" alt="">
+					</section>
+					<section>
+						<img src="images/epic2.png" alt="">
+					</section>
+					<section>
+						<img src="images/epic3.png" alt="">
+					</section>
+					<section>
+						<img src="images/epic4.png" alt="">
+					</section>
+					<section>
+						<h2>ಠ_ಠ</h2>
+					</section>
+					<section>
+						<h3>Scenario 2:</h3>
+							<img src="images/ftp1.png" alt="">
+					</section>
+					<section>
+						<img src="images/ftp2.png" alt="">
+					</section>
+					<section>
+						<img src="images/ftp3.png" alt="">
+					</section>
+					<section>
+						<img src="images/arrestedsadness.gif" alt="">
+					</section>
+					<section>
+						<h3>Scenario 3:</h3>
+							<img src="images/friends1.jpg" alt="">
+					</section>
+					<section>
+						<img src="images/friends2.jpg" alt="">
+					</section>
+					<section>
+						<img src="images/ftp2.png" alt="">
+					</section>
+					<section>
+						<img src="images/friends3.jpg" alt="">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Is there a better way?</h2>
+					</section>
+					<section>
+						<h3>Why, yes. Yes there is.</h3>
+						<img src="images/gitlogo-white.png" alt="">
+					</section>
+					<section>
+						<h2>What is Git?</h2>
+						<p>Git is a Version Control System (VCS). VCS allows you to: </p>
+						<ul>
+							<li>Create a History</li>
+							<li>Track changes</li>
+							<li>Make checkpoints</li>
+							<li>Make different versions</li>
+							<li>Go back in time</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>How we're going to do things&hellip;</h2>
+					</section>
+					<section>
+						<h3>The Basics</h3>
+						<h3>↓</h3>
+						<h3>Github</h3>
+						<h3>↓</h3>
+						<h3>Web/Command Line</h3>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Git Workflow</h2>
+					</section>
+					<section>
+						<h3>Initial Repository</h3>
+						<img src="images/init.png" alt="">
+					</section>
+					<section>
+						<h3>Initial Commit</h3>
+						<img src="images/initialcommit.png" alt="">
+					</section>
+					<section>
+						<h3>Changes, and commit</h3>
+						<img src="images/firstcommit.png" alt="">
+					</section>
+					<section>
+						<h3>Branch</h3>
+						<img src="images/branch.png" alt="">
+					</section>
+					<section>
+						<h3>Changes, and commit</h3>
+						<img src="images/branchcommit.png" alt="">
+					</section>
+					<section>
+						<h3>Merge Branch</h3>
+						<img src="images/commit-graph.png" alt="">
+					</section>
+					<section>
+						<h3>Push</h3>
+						<pre><code>
+$ git push
+							</code></pre>
+					</section>
+					<section>
+						<img src="images/deploy.jpg" alt="">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Summing things up&hellip;</h3>
+					</section>
+					<section>
+						<h3>Committing</h3>
+						<ol>
+							<li>Make Changes</li>
+							<li>Stage the Changes</li>
+							<li>Commit</li>
+							<li>????</li>
+							<li>Profit.</li>
+						</ol>
+					</section>
+					<section>
+						<img src="images/commit-graph.png" alt="">
+					</section>
+					<section>
+						<h3>Branching</h3>
+						<ol>
+							<li>Make a Branch</li>
+							<li>Commit Changes</li>
+							<li>Merge Branches</li>
+							<li>????</li>
+							<li>Profit.</li>
+						</ol>
+					</section>
+					<section>
+						<h3>Push</h3>
+						<pre><code>
+$ git push
+							</code></pre>
+					</section>
+					<section>
+						<img src="images/deploy.jpg" alt="">
+					</section>
+				</section>
+
+				<section>
+					<h2>Questions?</h2>
+					<img src="images/successkid.jpg" alt="">
+				</section>
+
+				<section>
+					<h2>People learn in lots of different ways.</h2>
+					<h3>Experiences is the best teacher.</h3>
+					<iframe width="620" height="480" src="http://www.youtube.com/embed/BignPBV32Sk?rel=0" frameborder="0" allowfullscreen></iframe>
+				</section>
+
+				<section>
+					<h2>Git Apps</h2>
+					<ul>
+						<li><a href="http://mac.github.com/">Github App</a></li>
+						<li><a href="http://www.sourcetreeapp.com/">Sourcetree</a></li>
+						<li><a href="http://gitx.laullon.com/">GitX</a></li>
+						<li><a href="http://gitboxapp.com/">Gitbox</a></li>
+						<li><a href="http://git-scm.com/downloads">Git Terminal App</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>Command Line</h2>
+					</section>
+					<section>
+						<h3>The Basics</h3>
+						<pre><code>
+# Changes the directory.
+$ cd
+
+# Goes up one directory.
+$ cd ..
+
+# Changes to the "images" folder inside of "git-repo" inside of "Desktop"
+$ cd Desktop/git-repo/images
+							</code></pre>
+					</section>
+					<section>
+						<h3>The Basics</h3>
+						<pre><code>
+# Lists all the files in the current directory
+$ ls
+
+# Lists all the files in the current directory...even hidden ones
+$ ls -a
+
+# Prints out the current directory
+$ pwd
+
+# Makes a directory called "brucerocks"
+$ mkdir brucerocks
+
+# Makes a blank file called "the-stars.html"
+$ touch the-stars.html
+							</code></pre>
+					</section>
+					<section>
+						<h3>SSH</h3>
+						<pre><code>
+# Secure Shell...zomg haxx
+$ ssh username@yourserver.com
+							</code></pre>
+					</section>
+					<section>
+						<h3>Git</h3>
+						<pre><code>
+#
+# Makes whatever folder youre in into a Git repository
+$ git init
+
+# Checks to see what files have changed since the last commit
+$ git status
+
+# Add all the changes and commit them
+$ git commit -am "Commit message"
+
+# Push all your changes to the github
+$ git push origin
+
+# Pull all your changes from the main repository
+$ git pull origin
+					</code></pre>
+					</section>
+					<section>
+						<h3>Git</h3>
+						<pre><code>
+# Lists all the branches in the repository
+#
+$ git branch
+
+# Goes to a certain branch
+$ git checkout branchname
+
+# Makes a new branch based off of the current one
+$ git checkout -b branchname
+
+# Merge the specified branch into the one you're in
+$ git merge branchname
+
+# Deletes specified branch
+$ git branch -d branchname
+					</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<h2>Links</h2>
+					<ul>
+						<li><a href="https://github.com/" target="_blank">Github</a></li>
+						<li><a href="https://bitbucket.org/" target="_blank">Bitbucket</a></li>
+						<li><a href="http://ftploy.com/" target="_blank">FTPloy</a></li>
+						<li><a href="http://webdesign.tutsplus.com/tutorials/workflow-tutorials/quick-tip-a-designers-introduction-to-the-command-line/" target="_blank">Designers Guide to Command Line</a></li>
+					</ul>
+				</section>
+
+				<section id="beautifulperson">
+					<h2><a href="#" id="personme">Person me!</a></h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<script src="beautifulpeople/list.js"></script>
+		<script src="beautifulpeople/main.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
