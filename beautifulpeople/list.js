@@ -1,1 +1,1 @@
-window.people = ['bruce.jpg'];
+window.people = ['bruce.jpg', 'scott.jpg'];
